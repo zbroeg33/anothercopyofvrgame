@@ -118,98 +118,33 @@
      <Compile Include="Assets\Scripts\Pickup.cs" />
      <Compile Include="Assets\Scripts\PickupScript.cs" />
      <Compile Include="Assets\Scripts\randomSpawn.cs" />
-     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
-     <Compile Include="Assets\VRSampleScenes\Scripts\Common\SessionData.cs" />
-     <Compile Include="Assets\VRSampleScenes\Scripts\Examples\ExampleInteractiveItem.cs" />
-     <Compile Include="Assets\VRSampleScenes\Scripts\Examples\ExampleRenderScale.cs" />
-     <Compile Include="Assets\VRSampleScenes\Scripts\Examples\ExampleRotation.cs" />
-     <Compile Include="Assets\VRSampleScenes\Scripts\Examples\ExampleTouchpad.cs" />
-     <Compile Include="Assets\VRSampleScenes\Scripts\Flyer\Asteroid.cs" />
-     <Compile Include="Assets\VRSampleScenes\Scripts\Flyer\AsteroidExplosion.cs" />
-     <Compile Include="Assets\VRSampleScenes\Scripts\Flyer\EnvironmentController.cs" />
-     <Compile Include="Assets\VRSampleScenes\Scripts\Flyer\ExplosionPhysicsForce.cs" />
-     <Compile Include="Assets\VRSampleScenes\Scripts\Flyer\FlyerAlignmentChecker.cs" />
-     <Compile Include="Assets\VRSampleScenes\Scripts\Flyer\FlyerGameController.cs" />
-     <Compile Include="Assets\VRSampleScenes\Scripts\Flyer\FlyerHealthController.cs" />
-     <Compile Include="Assets\VRSampleScenes\Scripts\Flyer\FlyerLaser.cs" />
-     <Compile Include="Assets\VRSampleScenes\Scripts\Flyer\FlyerLaserController.cs" />
-     <Compile Include="Assets\VRSampleScenes\Scripts\Flyer\FlyerMovementController.cs" />
-     <Compile Include="Assets\VRSampleScenes\Scripts\Flyer\ParticleSystemMultiplier.cs" />
-     <Compile Include="Assets\VRSampleScenes\Scripts\Flyer\Ring.cs" />
-     <Compile Include="Assets\VRSampleScenes\Scripts\Flyer\UIController.cs" />
-     <Compile Include="Assets\VRSampleScenes\Scripts\Intro\IntroManager.cs" />
-     <Compile Include="Assets\VRSampleScenes\Scripts\Maze\AgentTrail.cs" />
-     <Compile Include="Assets\VRSampleScenes\Scripts\Maze\AICharacterControl.cs" />
-     <Compile Include="Assets\VRSampleScenes\Scripts\Maze\CameraOrbit.cs" />
-     <Compile Include="Assets\VRSampleScenes\Scripts\Maze\DestinationMarker.cs" />
-     <Compile Include="Assets\VRSampleScenes\Scripts\Maze\ExitArea.cs" />
-     <Compile Include="Assets\VRSampleScenes\Scripts\Maze\MazeGameController.cs" />
-     <Compile Include="Assets\VRSampleScenes\Scripts\Maze\MazeTargetSetting.cs" />
-     <Compile Include="Assets\VRSampleScenes\Scripts\Maze\Player.cs" />
-     <Compile Include="Assets\VRSampleScenes\Scripts\Maze\SwitchButton.cs" />
-     <Compile Include="Assets\VRSampleScenes\Scripts\Maze\ThirdPersonCharacter.cs" />
-     <Compile Include="Assets\VRSampleScenes\Scripts\Maze\Turret.cs" />
-     <Compile Include="Assets\VRSampleScenes\Scripts\Menu\MenuAnimator.cs" />
-     <Compile Include="Assets\VRSampleScenes\Scripts\Menu\MenuButton.cs" />
-     <Compile Include="Assets\VRSampleScenes\Scripts\Menu\MenuItemPopout.cs" />
-     <Compile Include="Assets\VRSampleScenes\Scripts\Menu\MenuSelectorMover.cs" />
-     <Compile Include="Assets\VRSampleScenes\Scripts\ShootingGallery\ShootingGalleryController.cs" />
-     <Compile Include="Assets\VRSampleScenes\Scripts\ShootingGallery\ShootingGalleryGun.cs" />
-     <Compile Include="Assets\VRSampleScenes\Scripts\ShootingGallery\ShootingGalleryScore.cs" />
-     <Compile Include="Assets\VRSampleScenes\Scripts\ShootingGallery\ShootingTarget.cs" />
-     <Compile Include="Assets\VRSampleScenes\Scripts\ShootingGallery\UIController.cs" />
-     <Compile Include="Assets\VRSampleScenes\Scripts\Utils\GUIArrows.cs" />
-     <Compile Include="Assets\VRSampleScenes\Scripts\Utils\InputWarnings.cs" />
-     <Compile Include="Assets\VRSampleScenes\Scripts\Utils\ObjectPool.cs" />
-     <Compile Include="Assets\VRSampleScenes\Scripts\Utils\PlatformDependentText.cs" />
-     <Compile Include="Assets\VRSampleScenes\Scripts\Utils\Reticle.cs" />
-     <Compile Include="Assets\VRSampleScenes\Scripts\Utils\ReturnToMainMenu.cs" />
-     <Compile Include="Assets\VRSampleScenes\Scripts\Utils\SelectionRadial.cs" />
-     <Compile Include="Assets\VRSampleScenes\Scripts\Utils\SelectionSlider.cs" />
-     <Compile Include="Assets\VRSampleScenes\Scripts\Utils\UIFader.cs" />
-     <Compile Include="Assets\VRSampleScenes\Scripts\Utils\UIMovement.cs" />
-     <Compile Include="Assets\VRSampleScenes\Scripts\Utils\UITint.cs" />
-     <Compile Include="Assets\VRSampleScenes\Scripts\Utils\VRCameraFade.cs" />
-     <Compile Include="Assets\VRSampleScenes\Scripts\Utils\VRCameraUI.cs" />
-     <Compile Include="Assets\VRStandardAssets\Scripts\VRDeviceManager.cs" />
-     <Compile Include="Assets\VRStandardAssets\Scripts\VREyeRaycaster.cs" />
-     <Compile Include="Assets\VRStandardAssets\Scripts\VRFPSCounter.cs" />
-     <Compile Include="Assets\VRStandardAssets\Scripts\VRInput.cs" />
-     <Compile Include="Assets\VRStandardAssets\Scripts\VRInteractiveItem.cs" />
-     <Compile Include="Assets\VRStandardAssets\Scripts\VRTrackingReset.cs" />
      <Compile Include="Assets\Weapon Assets\Bullet.cs" />
      <Compile Include="Assets\Weapon Assets\FogSCript.cs" />
      <None Include="Assets\Oculus\VR\Resources\OVRMRUnlitTransparent.shader" />
      <None Include="Assets\Oculus\VR\Resources\OVRMRChromaKey.cginc" />
-     <None Include="Assets\VRSampleScenes\Shaders\UnlitTransparentParam.shader" />
      <None Include="Assets\Oculus\VR\Shaders\OVRColorRampAlpha.shader" />
      <None Include="Assets\Oculus\VR\Resources\Cubemap Blit.shader" />
-     <None Include="Assets\VRSampleScenes\Shaders\UIOverlay.shader" />
      <None Include="Assets\Oculus\VR\Resources\OVRMRUnlit.shader" />
      <None Include="Assets\Oculus\VR\Shaders\Unlit Crosshair.shader" />
-     <None Include="Assets\VRSampleScenes\Shaders\PriorityParticleAlpha.shader" />
      <None Include="Assets\Oculus\VR\Resources\Unlit Transparent Color.shader" />
      <None Include="Assets\Oculus\VR\Resources\OVRMRCameraFrameLit.shader" />
-     <None Include="Assets\VRSampleScenes\Shaders\SlidingUV.shader" />
      <None Include="Assets\Oculus\VR\Resources\Underlay Transparent Occluder.shader" />
      <None Include="Assets\Oculus\VR\Resources\Texture2D Blit.shader" />
-     <None Include="Assets\VRSampleScenes\Shaders\SeparableAlpha.shader" />
-     <None Include="Assets\VRSampleScenes\Fonts\RobotoLicense.txt" />
      <None Include="Assets\Oculus\VR\Resources\OVRMRCameraFrame.shader" />
      <None Include="Assets\Oculus\VR\Resources\OVRMRClipPlane.shader" />
      <None Include="Assets\Oculus\VR\Resources\Underlay Impostor.shader" />
      <None Include="Assets\Oculus\VR\Plugins\placeholder.txt" />
  <Reference Include="UnityEditor.StandardEvents">
- <HintPath>/Users/zacharybroeg/Desktop/VRGAMEWITHVRINIT copy/VRGAME/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+ <HintPath>/Users/zacharybroeg/Documents/GitHub/anothercopyofvrgame/VRGAMEWITHVRINIT copy/VRGAME/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>/Users/zacharybroeg/Desktop/VRGAMEWITHVRINIT copy/VRGAME/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>/Users/zacharybroeg/Documents/GitHub/anothercopyofvrgame/VRGAMEWITHVRINIT copy/VRGAME/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.PackageManagerUI.Editor">
- <HintPath>/Users/zacharybroeg/Desktop/VRGAMEWITHVRINIT copy/VRGAME/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+ <HintPath>/Users/zacharybroeg/Documents/GitHub/anothercopyofvrgame/VRGAMEWITHVRINIT copy/VRGAME/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>/Users/zacharybroeg/Desktop/VRGAMEWITHVRINIT copy/VRGAME/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>/Users/zacharybroeg/Documents/GitHub/anothercopyofvrgame/VRGAMEWITHVRINIT copy/VRGAME/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
