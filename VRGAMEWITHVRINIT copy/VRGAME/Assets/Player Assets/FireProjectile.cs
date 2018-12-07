@@ -22,7 +22,7 @@ public AudioClip outOfAmmo;
 	
 	// Update is called once per frame
 	void Update () {
-        if(Input.GetKeyDown(KeyCode.F) && (isLocalPlayer)){
+        if(Input.GetKeyDown(KeyCode.F) || OVRInput.Get(OVRInput.Button.SecondaryIndexTrigger) && (isLocalPlayer)){
            if(BulletsInClip >=1) {
 				CmdFire();
                 playShoot();

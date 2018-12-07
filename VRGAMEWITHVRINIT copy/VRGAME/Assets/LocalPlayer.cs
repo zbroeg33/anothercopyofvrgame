@@ -24,20 +24,20 @@ public class LocalPlayer : NetworkBehaviour {
         pos = transform.position;
     }
 
-    [Command]
-    public void CmdFireProjectile()
-    {
-        if (NetworkServer.active)
-        {
-            prefabInstance = Instantiate(projectilePrefab, spawnPos.position, spawnPos.transform.rotation);
-            prefabInstance.GetComponent<Rigidbody>().velocity = spawnPos.transform.forward * 2;
-            NetworkServer.Spawn(prefabInstance);
-        }
-    }
-    public void Fire(float fireRate)
-    {
-        CmdFireProjectile();
-    }
+    // [Command]
+    // public void CmdFireProjectile()
+    // {
+    //     if (NetworkServer.active)
+    //     {
+    //         prefabInstance = Instantiate(projectilePrefab, spawnPos.position, spawnPos.transform.rotation);
+    //         prefabInstance.GetComponent<Rigidbody>().velocity = spawnPos.transform.forward * 2;
+    //         NetworkServer.Spawn(prefabInstance);
+    //     }
+    // }
+    // public void Fire(float fireRate)
+    // {
+    //     CmdFireProjectile();
+    // }
     void Update () {
         if (!isLocalPlayer)
         {
@@ -61,22 +61,22 @@ public class LocalPlayer : NetworkBehaviour {
                 }
             }
 
-            if (OVRInput.Get(OVRInput.Button.PrimaryHandTrigger))
-            {
-                Fire(1);
-            }
-            if (OVRInput.Get(OVRInput.Button.Two))
-            {
-                Fire(1);
-            }
-            if (OVRInput.Get(OVRInput.Button.Three))
-            {
-                Fire(1);
-            }
-            if (OVRInput.Get(OVRInput.Button.Four))
-            {
-                Fire(1);
-            }
+            // if (OVRInput.Get(OVRInput.Button.PrimaryHandTrigger))
+            // {
+            //     Fire(1);
+            // }
+            // if (OVRInput.Get(OVRInput.Button.Two))
+            // {
+            //     Fire(1);
+            // }
+            // if (OVRInput.Get(OVRInput.Button.Three))
+            // {
+            //     Fire(1);
+            // }
+            // if (OVRInput.Get(OVRInput.Button.Four))
+            // {
+            //     Fire(1);
+            // }
 
             //handle animations
             if (OVRInput.Get(OVRInput.Axis2D.PrimaryThumbstick).x != 0 || OVRInput.Get(OVRInput.Axis2D.PrimaryThumbstick).y != 0)

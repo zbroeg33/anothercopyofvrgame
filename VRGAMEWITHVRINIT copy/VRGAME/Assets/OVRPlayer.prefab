@@ -198,6 +198,7 @@ GameObject:
   - component: {fileID: 114878916149267330}
   - component: {fileID: 114734934140301028}
   - component: {fileID: 114615404498895376}
+  - component: {fileID: 114456475241821118}
   m_Layer: 0
   m_Name: OVRPlayer
   m_TagString: Player
@@ -1668,7 +1669,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1207022973677544}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.007, y: 0.694, z: 0}
+  m_LocalPosition: {x: 0.007, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4690548026012214}
@@ -2604,6 +2605,21 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114456475241821118
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1207022973677544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0002868e0287e41eba17363a245d3934, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 0}
+  pickupObject: {fileID: 1375284375394646, guid: 1a9078f8d1cf8402ca3c122d36e85288,
+    type: 2}
+  BulletsInClip: 0
 --- !u!114 &114503004515216622
 MonoBehaviour:
   m_ObjectHideFlags: 1
