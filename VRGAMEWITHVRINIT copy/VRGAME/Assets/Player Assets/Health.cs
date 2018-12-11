@@ -38,13 +38,14 @@ public class Health : NetworkBehaviour {
 		Debug.Log("Health went down " + amount);
 		if ( currentHealth <= 0)
 		{
+			SceneManager.LoadScene("StartMenu");
 			
 			/*if (animator != null) {
 				animator.SetBool("isIdle", false);
 				animator.SetBool("isDead", true);
 			} 
 			*/
-			DestroyGameObject();
+			//DestroyGameObject();
 			
 			if (!destroyOnDeath)
 			{

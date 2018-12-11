@@ -147,7 +147,7 @@ public class LocalPlayer : NetworkBehaviour {
 			var health = hit.GetComponent<Health>();
 			Debug.Log(hit);
 			if(health != null) {
-				health.TakeDamage(10);
+				health.TakeDamage(1);
 				
 			}
 		 } 
