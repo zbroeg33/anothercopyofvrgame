@@ -22,8 +22,7 @@ public class menuScript : MonoBehaviour {
         startText = startText.GetComponent<Button>();
         settingsText = settingsText.GetComponent<Button>();
         exitText = exitText.GetComponent<Button>();
-        howText =  howText.GetComponent<Text>();
-        backButton = backButton.GetComponent<Button>();
+      
         
         Canvas = Canvas.GetComponent<GameObject>();
 
@@ -38,6 +37,11 @@ public class menuScript : MonoBehaviour {
     public void StartLevel ()
     {
         SceneManager.LoadScene("networkLobby");
+    }
+
+    public void StartVRLevel()
+    {
+        SceneManager.LoadScene("SinglePlayerLobby");
     }
 
     public void HowToPlay () {

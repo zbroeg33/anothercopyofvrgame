@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class MenuManager : MonoBehaviour
@@ -10,7 +11,7 @@ public class MenuManager : MonoBehaviour
     public GameObject[] playerArray;
     public GameObject serverMenu;
     public Text serverIP;
-
+    private bool Toggle = true;
     
 
     public void StartServer()
@@ -28,10 +29,20 @@ public class MenuManager : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if(SceneManager.GetActiveScene().name != "networkLobby" || SceneManager.GetActiveScene().name != "SinglePlayerLobby")
         {
-            serverMenu.SetActive(true);
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                serverMenu.SetActive(Toggle);
+                Toggle = !Toggle;
+
+            }
         }
+        
+       
+
+
+       
     }
     public void getIP(){
         if (serverIP.text.Length > 0 && serverIP.text!= null){
