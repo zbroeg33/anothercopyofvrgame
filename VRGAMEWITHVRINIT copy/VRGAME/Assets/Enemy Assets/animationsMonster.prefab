@@ -1049,8 +1049,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthBar: {fileID: 224525808525404892}
+  personBar: {fileID: 224525808525404892}
   destroyOnDeath: 1
   self: {fileID: 1458630471122796}
+  countText: {fileID: 0}
   currentHealth: 100
 --- !u!114 &114138796896274634
 MonoBehaviour:

@@ -42,7 +42,12 @@ public class Health : NetworkBehaviour {
 
 		currentHealth -= amount;
 		Debug.Log("Health went down " + amount);
-        countText.text = "Health: " + currentHealth.ToString();
+
+        if(isLocalPlayer)
+        {
+            countText.text = "Health: " + currentHealth.ToString();
+        }
+        
         if ( currentHealth <= 0)
 		{
             if(isLocalPlayer)

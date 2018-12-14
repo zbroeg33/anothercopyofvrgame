@@ -8,7 +8,7 @@ Assets/Scenes/MultiplayerGame.unity
 Assets/Scenes/SinglePlayerLobby.unity
 Assets/Scenes/Main.unity
 SceneListEnd?
-0bb307ebd499bc0a1397f4b5c31d1eae Assembly-CSharp.dll:.FireProjectile
+63bfe837ac4eb498d7eaac5815e8a007 Assembly-CSharp.dll:.FireProjectile
 c422dd62785a6d0afa870fbd111886ce Unity.TextMeshPro.dll:TMPro.TMP_SelectionCaret
 aae86b4ba2c26ab0769b16b054a05061 Assembly-CSharp.dll:.OVRMixedRealityCaptureSettings
 7b803eb2910e9b4cd5e521ae07b9f7d6 Unity.TextMeshPro.dll:TMPro.TMP_Dropdown
@@ -137,7 +137,7 @@ fc061f3ae8a876c0687e86378d4a447c UnityEngine.Networking.dll:UnityEngine.Networki
 e7489514a648ce787e3e741d97e0f561 Assembly-CSharp-firstpass.dll:UnityStandardAssets.Utility.WaypointProgressTracker
 7b23cdf2b63c19db8733613b8e4db62d Assembly-CSharp.dll:.FogSpawner
 5e3889ad7e3808209bee923f9f45eecf Assembly-CSharp.dll:.Monster
-86bcef5ae1bc39c36679bab7ce02031c Assembly-CSharp.dll:.Health
+d56d45da1bfe89abfa48392c7b7fbc85 Assembly-CSharp.dll:.Health
 0a006f3734181ba8b26758f0866152c0 UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
 7e727e029381ef22f11cd6a9fe412567 Assembly-CSharp.dll:.OVRTrackedRemote
 382b8ef512fa8d6108723a01b57af65b UnityEngine.Analytics.dll:UnityEngine.Analytics.AnalyticsEventTracker
