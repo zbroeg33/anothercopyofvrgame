@@ -8,11 +8,13 @@ using UnityEngine.SceneManagement;
 public class Health : NetworkBehaviour {
 
 	public RectTransform healthBar;
+    public RectTransform personBar;
 	public bool destroyOnDeath;
 	public GameObject self;
 	private Animator animator;
+    public Text countText;
 
-	public const int maxHealth = 100;
+    public const int maxHealth = 100;
 
 	[SyncVar(hook = "OnChangeHealth")]
 	public int currentHealth = maxHealth;
@@ -26,8 +28,12 @@ public class Health : NetworkBehaviour {
 			spawnPoints = FindObjectsOfType<NetworkStartPosition>();		
 		}
 	}
+    void SetHealthText()
+    {
+        countText.text = "Health: " + currentHealth.ToString();
+    }
 
-	public void TakeDamage(int amount)
+    public void TakeDamage(int amount)
 	{
 		if (!isServer)
 		{
@@ -36,7 +42,8 @@ public class Health : NetworkBehaviour {
 
 		currentHealth -= amount;
 		Debug.Log("Health went down " + amount);
-		if ( currentHealth <= 0)
+        countText.text = "Health: " + currentHealth.ToString();
+        if ( currentHealth <= 0)
 		{
             if(isLocalPlayer)
             {
@@ -65,8 +72,13 @@ public class Health : NetworkBehaviour {
 		}
 
 		healthBar.sizeDelta = new Vector2(currentHealth, healthBar.sizeDelta.y);
+        personBar.sizeDelta = new Vector2(currentHealth, healthBar.sizeDelta.y);
 	}
 
+    public int GetHealth()
+    {
+        return currentHealth;
+    }
 	public void DestroyGameObject() {
 		
 		Debug.Log("destroying: " + self);
@@ -77,7 +89,8 @@ public class Health : NetworkBehaviour {
 
 	void OnChangeHealth (int health)
 	{
-		healthBar.sizeDelta = new Vector2(health, healthBar.sizeDelta.y);
+        personBar.sizeDelta = new Vector2(currentHealth, healthBar.sizeDelta.y);
+        healthBar.sizeDelta = new Vector2(health, healthBar.sizeDelta.y);
 	}
 
 	[ClientRpc]

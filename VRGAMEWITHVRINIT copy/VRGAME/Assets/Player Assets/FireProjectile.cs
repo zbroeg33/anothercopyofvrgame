@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
-
+using UnityEngine.UI;
  [RequireComponent(typeof(AudioSource))]
 public class FireProjectile : NetworkBehaviour {
 
@@ -10,8 +10,8 @@ public class FireProjectile : NetworkBehaviour {
     GameObject instantiatedProjectile;
     public Transform projectileLaunchPoint;
     public int BulletsInClip = 0;
-
- public AudioSource audio;
+    public Text countText;
+    public AudioSource audio;
 
 public AudioClip shoot;
 
@@ -19,9 +19,13 @@ public AudioClip outOfAmmo;
 	void Start () {
 		 audio = GetComponent<AudioSource>();
 	}
-	
-	// Update is called once per frame
-	void Update () {
+    void SetAmmoText()
+    {
+        countText.text = "Ammo: " + BulletsInClip.ToString();
+    }
+
+    // Update is called once per frame
+    void Update () {
         if(Input.GetKeyDown(KeyCode.F) || OVRInput.Get(OVRInput.Button.SecondaryIndexTrigger) && (isLocalPlayer)){
            if(BulletsInClip >=1) {
 				CmdFire();
@@ -58,6 +62,7 @@ public AudioClip outOfAmmo;
         }
 
         BulletsInClip--;
+        countText.text = "Ammo: " + BulletsInClip.ToString();
         if (NetworkServer.active)
         {
           //  NetworkServer.Destroy(instantiatedProjectile);
@@ -72,7 +77,8 @@ public AudioClip outOfAmmo;
 		 	Debug.Log("We hit the pickup object");
 		 	BulletsInClip++;
 			 Debug.Log("bullets in Clip" + BulletsInClip);
-		 }	
+            countText.text = "Ammo: " + BulletsInClip.ToString();
+        }	
          else if(other.gameObject.CompareTag("Monster")) {
 			 Debug.Log("Shot the Monster");
 			var hit = this.gameObject;

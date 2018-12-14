@@ -27,12 +27,18 @@ public class MenuManager : MonoBehaviour
         serverMenu.SetActive(false);
     }
 
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
+
     private void Update()
     {
         if(SceneManager.GetActiveScene().name != "networkLobby" || SceneManager.GetActiveScene().name != "SinglePlayerLobby")
         {
             if (Input.GetKeyDown(KeyCode.Escape))
             {
+                
                 serverMenu.SetActive(Toggle);
                 Toggle = !Toggle;
 
